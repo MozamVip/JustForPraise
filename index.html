@@ -1,0 +1,620 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff8f6" />
+  <meta name="description" content="An official presidential announcement for Praise. One special candidate. One very important position.">
+  <title>The First Lady Application | Praise 💗</title>
+
+  <!-- Tailwind CSS browser prototype -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .serif {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .paper {
+      background-color: #fffaf8;
+      background-image: radial-gradient(#e7b8c2 0.65px, transparent 0.65px);
+      background-size: 14px 14px;
+    }
+
+    .heart {
+      position: fixed;
+      bottom: -35px;
+      pointer-events: none;
+      z-index: 100;
+      animation: floatUp 5s linear forwards;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-110vh) rotate(30deg);
+        opacity: 0;
+      }
+    }
+
+    .fade {
+      animation: appear 0.5s ease both;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .choice-btn {
+      transition: all 0.2s ease;
+    }
+
+    .choice-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .choice-btn:focus-visible,
+    button:focus-visible,
+    a:focus-visible {
+      outline: 3px solid #d66b87;
+      outline-offset: 4px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-[#fff8f6] text-[#39242d]">
+
+  <!-- Navigation -->
+  <nav class="max-w-5xl mx-auto px-5 py-6 flex items-center justify-between gap-3">
+    <div class="flex items-center gap-2 font-bold tracking-tight">
+      <span class="text-3xl text-[#c65375]">♡</span>
+      <span class="text-xs sm:text-sm">THE NEW ADMINISTRATION</span>
+    </div>
+
+    <span class="text-[10px] sm:text-xs uppercase tracking-[.15em] text-[#b36b80] text-right">
+      Official Portal
+    </span>
+  </nav>
+
+  <main class="max-w-3xl mx-auto px-5 pb-16 pt-8 md:pt-14">
+
+    <!-- WELCOME SCREEN -->
+    <section id="intro" class="text-center fade">
+
+      <div class="inline-flex items-center gap-2 bg-white border border-[#f2d9df] rounded-full px-4 py-2 text-xs text-[#a64c68] shadow-sm">
+        <span class="animate-pulse">●</span>
+        BREAKING NEWS FROM THE PRESIDENCY
+      </div>
+
+      <div class="text-6xl mt-10 mb-5">💌</div>
+
+      <p class="text-xs sm:text-sm uppercase tracking-[.2em] text-[#b36b80] mb-4">
+        A presidential announcement
+      </p>
+
+      <h1 class="serif text-5xl sm:text-6xl md:text-7xl leading-tight">
+        Dear Praise,
+        <br>
+        <span class="italic text-[#d66b87]">we need to talk.</span>
+      </h1>
+
+      <p class="max-w-lg mx-auto mt-6 text-[#7e6570] leading-8">
+        Following the recent overthrow of the previous administration,
+        the presidency has one very important vacancy to fill.
+        And, quite frankly, I have someone in mind. 👀
+      </p>
+
+      <div class="paper max-w-md mx-auto mt-9 p-6 sm:p-8 rounded-2xl border border-[#f0d5dc]">
+
+        <p class="text-xs tracking-[.2em] text-[#a65b73] uppercase mb-3">
+          Vacancy Announcement No. 001
+        </p>
+
+        <h2 class="serif text-3xl sm:text-4xl">
+          First Lady of the Republic
+        </h2>
+
+        <p class="text-sm text-[#8b6d78] mt-4 leading-7">
+          One position. One special candidate.
+          An unreasonable amount of affection.
+        </p>
+
+        <div class="mt-5 inline-block rounded-full bg-[#f9e2e8] px-4 py-2 text-sm font-semibold text-[#a64c68]">
+          Preferred candidate: Praise ♡
+        </div>
+
+        <div class="mt-6 pt-5 border-t border-[#edcbd5]">
+          <div class="flex justify-between text-sm py-2">
+            <span class="text-[#8b6d78]">Position</span>
+            <span class="font-semibold">First Lady</span>
+          </div>
+          <div class="flex justify-between text-sm py-2">
+            <span class="text-[#8b6d78]">Salary</span>
+            <span class="font-semibold">Love & attention 💗</span>
+          </div>
+          <div class="flex justify-between text-sm py-2">
+            <span class="text-[#8b6d78]">Reporting to</span>
+            <span class="font-semibold">President Kelechi</span>
+          </div>
+        </div>
+
+      </div>
+
+      <button
+        onclick="startApplication()"
+        class="mt-9 w-full sm:w-auto rounded-full bg-[#c65375] px-8 py-4 font-semibold text-white shadow-lg shadow-pink-200 hover:bg-[#a83f60] hover:-translate-y-1 transition"
+      >
+        Submit My Application 💗
+      </button>
+
+      <p class="mt-4 text-xs text-[#b59aa4]">
+        Takes approximately 30 seconds. Smiling is compulsory.
+      </p>
+
+      <div class="mt-12 flex justify-center items-center gap-3 text-sm text-[#b59aa4]">
+        <span>♡</span>
+        <span>Prepared especially for Praise</span>
+        <span>♡</span>
+      </div>
+
+    </section>
+
+
+    <!-- APPLICATION / INTERVIEW -->
+    <section id="application" class="hidden fade mt-12">
+
+      <div class="bg-white rounded-3xl border border-[#f0dce1] shadow-xl shadow-pink-100/50 p-6 sm:p-8 md:p-10">
+
+        <div class="flex items-center justify-between gap-3 mb-7">
+          <span class="text-xs uppercase tracking-widest text-[#bd6981]">
+            Candidate assessment
+          </span>
+
+          <span id="stepLabel" class="text-xs text-gray-400">
+            Question 1 of 3
+          </span>
+        </div>
+
+        <div class="h-1.5 bg-[#f9e7ec] rounded-full mb-9 overflow-hidden">
+          <div
+            id="progress"
+            class="h-full bg-[#d66b87] rounded-full transition-all"
+            style="width: 33.33%"
+          ></div>
+        </div>
+
+        <div id="questionArea"></div>
+
+        <p class="mt-8 text-xs text-center text-[#b59aa4]">
+          All answers will be reviewed by the President personally. 👀
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- FINAL RESULT -->
+    <section id="result" class="hidden fade mt-12 text-center">
+
+      <div class="bg-white border border-[#f0d5dc] rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl shadow-pink-100/50">
+
+        <div class="text-6xl mb-5">🎉</div>
+
+        <p class="uppercase tracking-[.2em] text-xs text-[#b36b80]">
+          Office of the Presidency
+        </p>
+
+        <h2 class="serif text-4xl sm:text-5xl mt-4">
+          Congratulations, Praise!
+        </h2>
+
+        <p class="text-[#8b6d78] mt-3">
+          Your application has been reviewed.
+        </p>
+
+
+        <!-- CERTIFICATE -->
+        <div class="paper border border-[#edcbd5] rounded-2xl p-5 sm:p-7 mt-8 text-left">
+
+          <div class="flex justify-between items-start gap-4">
+
+            <div>
+              <p class="text-xs uppercase tracking-widest text-[#b36b80]">
+                Certificate of appointment
+              </p>
+
+              <h3 class="serif text-3xl sm:text-4xl mt-3">
+                The First Lady
+              </h3>
+
+              <p class="text-sm mt-3 text-[#8b6d78]">
+                Presented to Praise
+              </p>
+            </div>
+
+            <span class="text-4xl sm:text-5xl">💐</span>
+          </div>
+
+          <div class="h-px bg-[#e9c5cf] my-6"></div>
+
+          <p class="leading-8 text-sm text-[#725563]">
+            By the completely unofficial authority vested in me,
+            I hereby appoint <strong>Praise</strong> to the prestigious
+            position of First Lady of this administration, effective immediately.
+          </p>
+
+          <p class="leading-8 text-sm text-[#725563] mt-4">
+            Her responsibilities include receiving premium attention,
+            occasional sweet messages, spontaneous laughter, making
+            ordinary days feel special, and possibly stealing the
+            President's heart.
+          </p>
+
+          <p class="text-sm text-[#725563] mt-4">
+            Benefits include complimentary smiles, good conversations,
+            and a President who may or may not be a little too fond of her. 😂
+          </p>
+
+          <div class="h-px bg-[#e9c5cf] my-6"></div>
+
+          <div class="text-center">
+            <p class="text-xs uppercase tracking-[.25em] text-[#b36b80]">
+              With the highest regards
+            </p>
+
+            <p class="serif italic text-3xl text-[#c65375] mt-2">
+              Kelechi ♡
+            </p>
+
+            <p class="text-xs text-[#b59aa4] mt-1">
+              President of the Department of Making Praise Smile
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- PERSONAL COMPLIMENTS -->
+        <div class="mt-10 text-left">
+
+          <div class="text-center text-3xl mb-4">🥹💗</div>
+
+          <h3 class="serif text-2xl sm:text-3xl text-center">
+            Praise, can I be honest?
+          </h3>
+
+          <p class="text-[#8b6d78] mt-5 leading-8">
+            Asides from your official qualifications for the position
+            of First Lady, there's something else you should know.
+          </p>
+
+          <div class="paper border border-[#edcbd5] rounded-2xl p-5 sm:p-6 mt-5">
+
+            <p class="serif text-xl sm:text-2xl leading-8">
+              There's something about your smile, Praise. ❤️
+            </p>
+
+            <p class="text-[#8b6d78] leading-8 mt-3">
+              It's the kind of smile that makes someone pause for a
+              moment and forget what they were about to say.
+              And your aura? There's this beautiful energy about you
+              that makes you stand out without even trying.
+            </p>
+
+            <p class="text-[#8b6d78] leading-8 mt-4">
+              You have this way of making a simple conversation
+              feel special, and I honestly think that deserves
+              an official presidential announcement of its own. 😂
+            </p>
+
+            <p class="serif italic text-xl text-[#bd5272] mt-6">
+              Signed with affection,
+              <br>
+              Kelechi — Your self-appointed President. 💌
+            </p>
+
+          </div>
+
+          <p class="text-[#8b6d78] mt-6 leading-8">
+            Now, I can't promise you a perfect administration,
+            but I can promise to keep finding little ways to make
+            you smile. And if your smile is already this distracting,
+            I fear what happens when you start laughing. 🥹💕
+          </p>
+
+        </div>
+
+
+        <!-- INTERACTIVE WHATSAPP REVEAL -->
+        <div class="mt-9 rounded-2xl border border-[#f0dce1] p-5 sm:p-7">
+
+          <div class="text-4xl mb-3">💌</div>
+
+          <h3 class="serif text-2xl sm:text-3xl">
+            One final presidential request...
+          </h3>
+
+          <p class="text-[#8b6d78] mt-3 leading-7">
+            Every successful administration needs good communication.
+            The President would like to hear from his favourite candidate.
+          </p>
+
+          <button
+            onclick="celebrate()"
+            class="mt-6 w-full rounded-full bg-[#c65375] px-6 py-4 font-semibold text-white hover:bg-[#a83f60] transition"
+          >
+            Send Some Love Back 💌
+          </button>
+
+          <div id="loveReply" class="hidden fade mt-6 rounded-2xl bg-[#fff1f4] p-5 sm:p-6">
+
+            <div class="text-4xl mb-3">💗</div>
+
+            <p class="serif text-2xl">
+              The President awaits your response...
+            </p>
+
+            <p class="text-sm text-[#8b6d78] mt-3 leading-7">
+              Praise, the application process may be over, but the
+              conversation doesn't have to be. 😉
+              <br><br>
+              Have something to tell Kelechi? Your private presidential
+              communication line is now open.
+            </p>
+
+            <a
+              id="whatsappLink"
+              href="https://wa.me/2348071272293?text=Kelechi%20%F0%9F%98%82%E2%9D%A4%EF%B8%8F%20I%20have%20received%20my%20official%20First%20Lady%20appointment.%20I%20must%20say%2C%20Mr%20President%2C%20you%20have%20made%20me%20smile.%20%F0%9F%A5%B9%F0%9F%92%97"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-6 flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-5 py-4 font-semibold text-white hover:bg-[#1fb85a] transition"
+            >
+              <span class="text-xl">♡</span>
+              Reply to Kelechi on WhatsApp
+              <span>↗</span>
+            </a>
+
+            <p class="text-xs text-[#b59aa4] mt-4">
+              Official presidential hotline. Very unofficial butterflies. 💗
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text-xs text-[#b59aa4] mt-6 leading-6">
+        Made especially for Praise, with a little extra thought. ♡
+        <br>
+        © The New Administration · Built on vibes and presidential affection.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- INTERACTIONS -->
+  <script>
+    const questions = [
+      {
+        title: "Let's start with the basics. 👀",
+        text: "Why should you be appointed First Lady?",
+        options: [
+          "Because I'm obviously the best candidate 😌",
+          "Because the President is already smiling at me 😂",
+          "Because our love story would make history 💗"
+        ]
+      },
+      {
+        title: "A very serious policy question.",
+        text: "What should be the first order of business?",
+        options: [
+          "Mandatory dates and good food 🍝",
+          "Unlimited hugs and sweet messages 💌",
+          "Making sure we always make each other smile 🥹"
+        ]
+      },
+      {
+        title: "Final question, Praise. 💕",
+        text: "Are you ready to serve as First Lady?",
+        options: [
+          "Yes, Mr President! 😂❤️",
+          "I need to negotiate my benefits first 😭",
+          "Only if the President takes me on a date 🥰"
+        ]
+      }
+    ];
+
+    let currentQuestion = 0;
+    const answers = [];
+
+    function startApplication() {
+      document.getElementById('intro').classList.add('hidden');
+      document.getElementById('application').classList.remove('hidden');
+
+      renderQuestion();
+
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    function renderQuestion() {
+      const question = questions[currentQuestion];
+
+      document.getElementById('stepLabel').textContent =
+        `Question ${currentQuestion + 1} of ${questions.length}`;
+
+      document.getElementById('progress').style.width =
+        `${((currentQuestion + 1) / questions.length) * 100}%`;
+
+      const questionArea = document.getElementById('questionArea');
+
+      questionArea.innerHTML = `
+        <h2 class="serif text-3xl sm:text-4xl">
+          ${question.title}
+        </h2>
+
+        <p class="mt-4 mb-7 text-[#8b6d78] leading-7">
+          ${question.text}
+        </p>
+
+        <div class="space-y-3">
+          ${question.options.map((option, index) => `
+            <button
+              type="button"
+              onclick="selectAnswer(${index})"
+              class="choice-btn w-full text-left rounded-2xl border border-[#f0dce1] bg-[#fffaf9] hover:border-[#d66b87] hover:bg-[#fff0f4] p-4 sm:p-5 text-sm sm:text-base leading-6"
+            >
+              ${option}
+            </button>
+          `).join('')}
+        </div>
+
+        <p class="text-xs text-[#b59aa4] mt-5">
+          Choose the answer that feels right to you. ♡
+        </p>
+      `;
+    }
+
+    function selectAnswer(index) {
+      answers[currentQuestion] = index;
+
+      if (currentQuestion < questions.length - 1) {
+        currentQuestion++;
+        renderQuestion();
+      } else {
+        showResult();
+      }
+    }
+
+    function showResult() {
+      document.getElementById('application').classList.add('hidden');
+      document.getElementById('result').classList.remove('hidden');
+
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+
+      celebrateHearts();
+    }
+
+    function celebrate() {
+      const reply = document.getElementById('loveReply');
+
+      reply.classList.remove('hidden');
+
+      celebrateHearts();
+
+      setTimeout(() => {
+        reply.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+      }, 100);
+    }
+
+    function celebrateHearts() {
+      const reducedMotion = window.matchMedia(
+        '(prefers-reduced-motion: reduce)'
+      ).matches;
+
+      if (reducedMotion) {
+        return;
+      }
+
+      const symbols = ['💗', '💕', '💖', '♡', '💌'];
+
+      for (let i = 0; i < 24; i++) {
+        setTimeout(() => {
+          const heart = document.createElement('span');
+
+          heart.className = 'heart';
+
+          heart.textContent =
+            symbols[Math.floor(Math.random() * symbols.length)];
+
+          heart.style.left = Math.random() * 100 + 'vw';
+
+          heart.style.fontSize =
+            (16 + Math.random() * 20) + 'px';
+
+          heart.style.animationDuration =
+            (3 + Math.random() * 3) + 's';
+
+          document.body.appendChild(heart);
+
+          setTimeout(() => {
+            heart.remove();
+          }, 6500);
+
+        }, i * 100);
+      }
+    }
+
+    // WhatsApp click-to-chat:
+    // Country code included, without the leading +.
+    // The recipient can edit the message before sending.
+    const phoneNumber = '2348071272293';
+
+    const whatsappMessage =
+      "Kelechi 😂❤️ I have received my official First Lady appointment! " +
+      "I must say, Mr President, you have made me smile. 🥹💗 " +
+      "I have a few questions about these presidential benefits though... 👀💕";
+
+    document.getElementById('whatsappLink').href =
+      'https://wa.me/' + phoneNumber +
+      '?text=' + encodeURIComponent(whatsappMessage);
+  </script>
+
+</body>
+</html>
